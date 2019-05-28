@@ -1,0 +1,136 @@
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+
+<style>
+#survey-content {
+  font-family: 'Noto Sans HK', sans-serif;
+  font-size: 16px;
+}
+#background-color {
+  background-color: #FFEBEB; /*dusty rose color*/
+}
+#survey-content {
+  background-color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: justify;
+}
+h1{
+    font-family: 'Noto Sans HK', sans-serif;
+}
+input:invalid {
+  background: hsla(0, 90%, 70%, 1);
+}
+input:valid {
+  background: hsla(100, 90%, 70%, 1);
+}
+table {
+  line-height: 1.5;
+}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+fieldset {
+  display: block;
+}
+form legend {
+  padding: 0 5px;
+  font-weight: bold;
+}
+form fieldset li {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+}
+td {
+  vertical-align: top;
+  padding: 15px;
+}
+body {
+  text-align: center;
+}
+</style>
+
+<html>
+
+<head>
+  <title id="pagetitle">Join Stitchers Today!</title>
+</head>
+
+<body>
+<div id="background-color">
+  <h1 id="title" style="text-align:center; padding-top:10px;">Join Stitchers Today!</h1> <!--user story #1-->
+<div id="survey-content">
+  <p id="description">Please enter your personal information below to join Stitchers and receive email communications from the Stitchers team. Our first meeting is <time datetime="2018-09-05">September 5<sup>th</sup>, 2018</time>. Thank you!</p> <!--user story #2-->
+  <form id="survey-form" action="https://en.wikipedia.org/wiki/Shrek"> <!--user story #3-->
+    <fieldset>
+    <legend>Enter your information below:</legend>
+    <table class="center">
+      <tr>
+        <td>
+          <label for="name" id="name-label">Name: </label></td>
+        <td>
+          <input type="text" required placeholder="Bob Bobson" maxlength="35"></input></td> <!--user story #4 and #10 and #11-->
+      </tr>
+      <tr>
+        <td>
+          <label for="email" id="email-label">Email: </label></td>
+        <td>
+          <input type="text" required placeholder="bobsonb123@gmail.com" pattern="[A-Za-z0-9]+[@][A-Za-z]+[.][A-Za-z]+" maxlength="35" id="email"></input></td> <!--user story #5 and #6-->
+      </tr>
+      <tr>
+        <td>
+          <label for="age" id="number-label">Age: </label></td>
+        <td>
+          <input type="number" required placeholder="27" pattern="[0-9]+" min="13" max="120" maxlength="3" id="number"></input></td> <!-- user story #7 and #8 and #9-->
+      </tr>
+      <tr>
+        <td>
+          <label for="experience-yrs" id="dropdown">How much knitting/crocheting <br>experience do you have? </label></td><!--user story #12-->
+        <td>
+          <select>
+            <option value="less1mo">Less than 1 month</option>
+            <option value="btwn1to3">Between 1 and 3 months</option>
+            <option value="btwn3to6">Between 3 and 6 months</option>
+            <option value="from6to1">Between 6 months and 1 year</option>
+            <option value="over1">Over 1 year</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td>
+          <p>Are you interested in loom knitting?</p></td>
+        <td>
+          <label for="loomknityes" style="display:none">Yes</label>
+          <input type="radio" name="loom-knitting" required checked>Yes</input><br> <!--user story #13-->
+          <label for="loomknitno" style="display:none">No</label>
+          <input type="radio" name="loom-knitting">No</input>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Please select the needlecrafts you feel <br>proficient at/would be willing to teach <br>others.</p></td>
+        <td>
+          <label for="knit" style="display:none">Knitting</label>
+          <input type="checkbox" name="needlecraft" value="knitting">Knitting</input><br> <!--user story #14-->
+          <label for="crochet" style="display:none">Crocheting</label>
+          <input type="checkbox" name="needlecraft" value="crocheting">Crochet</input><br>
+          <label for="needlepoint" style="display:none">Needlepoint</label>
+          <input type="checkbox" name="needlecraft" value="needlepointing">Needlepoint</input><br>
+          <label for="crossstitch" style="display:none">Cross-Stitch</label>
+          <input type="checkbox" name="needlecraft" value="crossstitching">Cross-Stitch</input>
+        </td>
+      </tr>
+    </table><br>
+    <textarea name="comments" rows="10" cols="50" style="display:block; margin:auto" placeholder="Comments, questions? Enter them here!"></textarea><br><br> <!--user story #15-->
+    <button type="submit" id="submit" style="display:block; margin: auto;">Submit</button>
+    </fieldset>
+  </form>
+</div> <!--ends survey content-->
+
+<p style="text-align:center; padding-bottom:10px;">Thanks for joining!</p>
+</div> <!--ends background-color-->
+</body>
+
+</html>
